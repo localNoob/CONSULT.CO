@@ -1,0 +1,59 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONSULT.CO - Helping Students Worldwide</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo|Questrial|Sarala&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/graduation.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="center" id="modal-here"></div>
+    <div class="content">
+      <div class="text">
+        <h1>Get the help that you need.</h1>
+        <p>
+          Consultation is a great way to improve on your studies as this also
+          brings out your full potential. Clarify misconceptions, answer
+          exercises, and make up for missed requirements! Need academic help?
+        </p>
+        <br />
+        <br />
+        <div class="button">
+          <a href="home.html">
+            <button>REDIRECT TO HOME</button>
+          </a>
+        </div>
+      </div>
+      <div class="pic flip">
+        <img src="img/30.jpg" alt="stressed girl." class="flip" />
+      </div>
+    </div>
+  </body>
+
+  <script>
+    var place = document.getElementById("modal-here");
+    var actualContent = document.createElement("div");
+    actualContent.classList.add("newClass");
+
+    function placeBlocks() {
+      actualContent.innerHTML =
+        "Welcome to CONSULT.CO's Build 2.0. Enjoy the new look and its more responsive design!";
+      setTimeout(function () {
+        actualContent.style.display = "block";
+        actualContent.style.opacity = 0;
+        actualContent.style.transition = "opacity 0.5s ease-in-out";
+      }, 3500);
+      actualContent.style.opacity = 1;
+      place.append(actualContent);
+    }
+
+    window.onload = function () {
+      placeBlocks();
+    };
+  </script>
+</html>

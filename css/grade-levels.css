@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: #fff1af;
+}
+
+.navbar {
+  background-color: #1a535c;
+}
+
+.navbar .navbar-brand {
+  font-family: "Arvo", serif;
+  font-weight: 800;
+  color: #ffe874;
+  font-size: 25px;
+  padding-left: 15px;
+}
+
+.navbar .navbar-brand:hover {
+  color: #aee8e4;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.nav-link {
+  color: #f7fff7;
+  font-size: 20px;
+  font-family: "Questrial", sans-serif;
+}
+
+.nav-link.active {
+  color: #ffe874;
+}
+
+.dropdown-menu .dropdown-item.active {
+  background-color: #fff1af;
+  color: #ff6b6b;
+}
+
+.dropdown-menu .dropdown-item.active:hover {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  background-color: #1a535c;
+  color: #f7fff7;
+}
+
+.nav-link:hover {
+  color: #ffe874;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.nav-link.active:hover {
+  color: #f7fff7;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.nav-item.woah {
+  cursor: not-allowed;
+}
+
+.nav-item.woah > a {
+  color: #ff6b6b;
+}
+
+.nav-item.dropdown {
+  padding-right: 20px;
+}
+
+.dropdown-item {
+  font-family: "Questrial", sans-serif;
+  color: #303030;
+}
+
+.dropdown-divider {
+  background-color: #303030;
+}
+
+.dropdown-menu a.dropdown-item:hover {
+  background-color: #fff1af;
+  color: #1a535c;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+div.dropdown-menu {
+  background-color: #aee8e4;
+  border: none;
+  width: 50px;
+}
+
+button.navbar-toggler {
+  border: 1px solid #f7fff7;
+  margin-right: 25px;
+}
+
+span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(247,255,247)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+main h1 {
+  padding-top: 100px;
+  font-family: "Arvo", serif;
+  font-size: 80px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
+
+.subjects {
+  padding: 20px 20px 100px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.subjects li {
+  width: 450px;
+  margin: 0;
+  padding: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.subjects figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.subjects figure img {
+  max-width: 100%;
+  display: block;
+  position: relative;
+  transition: transform 0.5s;
+  padding: 40px;
+}
+
+.subjects figure:hover img {
+  transform: translateY(-50px);
+}
+
+.subjects figcaption {
+  font-family: "Questrial", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 15px;
+  background-color: #aee8e4;
+  color: #303030;
+  width: 100%;
+  top: auto;
+  bottom: 0;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.5s, opacity 0.5s 0.5s;
+}
+
+.subjects figure:hover figcaption {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.subjects figcaption h3 {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+}
+
+.subjects figcaption p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.subjects figcaption a {
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 2px solid #ff6b6b;
+  background: #ff6b6b;
+  color: #f7fff7;
+  text-decoration: none;
+  margin-top: 10px;
+  float: right;
+  text-transform: uppercase;
+}
+
+.subjects figcaption a:hover {
+  background-color: transparent;
+  color: #ff6b6b;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  transform: scale(1.05);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a535c;
+}
+
+.one,
+.two,
+.three {
+  width: 250px;
+  text-align: center;
+  align-items: center;
+  font-family: "Questrial", sans-serif;
+  padding: 10px 30px;
+}
+
+.one {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #f7fff7;
+}
+
+.one small b {
+  font-family: "Arvo", serif;
+  color: #ffe874;
+}
+
+.two span {
+  font-size: 2rem;
+  letter-spacing: 1rem;
+}
+
+.fa-twitter,
+.fa-facebook,
+.fa-youtube {
+  color: #f7fff7;
+}
+
+.fa-twitter:hover {
+  color: #00acee;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  font-size: 2.75rem;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  font-size: 2.75rem;
+}
+
+.fa-youtube:hover {
+  color: red;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  font-size: 2.75rem;
+}
+
+.three {
+  line-height: 1.5rem;
+  color: #f7fff7;
+}
+
+.three p {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.three h5 {
+  font-size: 1.5rem;
+  color: #ff6b6b;
+  margin: 0;
+  font-family: "Arvo", serif;
+}
+
+.three a {
+  color: #f7fff7;
+}
+
+.three a:hover {
+  color: #ffe874;
+  text-decoration: none;
+  transition-timing-function: ease-out;
+  transition-duration: 0.5s;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-link:hover,
+  .nav-link.active:hover {
+    background-color: #fff1af;
+    color: #303030;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+  }
+
+  .dropdown-menu .dropdown-item.active:hover {
+    background-color: #aee8e4;
+    color: #f7fff7;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+  }
+
+  .nav-link.disabled:hover {
+    background-color: transparent;
+    color: #ff6b6b;
+  }
+
+  div.dropdown-menu {
+    background-color: transparent;
+    border: none;
+    width: 100px;
+  }
+
+  a.dropdown-item {
+    font-size: 18px;
+    color: #ffe874;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  main h1 {
+    font-size: 65px;
+  }
+
+  .subjects {
+    padding: 10px 10px 100px 10px;
+  }
+
+  .subjects li {
+    width: 100%;
+    min-width: 300px;
+  }
+
+  .one,
+  .two,
+  .three {
+    width: 150px;
+  }
+
+  .one {
+    font-size: 1.1rem;
+    line-height: 1rem;
+  }
+
+  .three h5,
+  .three p {
+    font-size: 1rem;
+  }
+
+  .three a:hover {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    width: 105%;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  body {
+    width: 110%;
+  }
+
+  main h1 {
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 325px) {
+  body {
+    width: 120%;
+  }
+}

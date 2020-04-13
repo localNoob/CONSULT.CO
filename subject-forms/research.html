@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONSULT.CO - Free Consultation For Students</title>
+    <link rel="stylesheet" href="../css/subject-forms.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo|Questrial|Sarala&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <main>
+      <div class="back-button">
+        <button onclick="back()">
+          <i class="fas fa-angle-double-left"></i>BACK
+        </button>
+      </div>
+
+      <div class="fill-up-form">
+        <h1>Research</h1>
+        <form action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group col">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="last-name"
+                placeholder="LAST NAME"
+                required
+              />
+            </div>
+            <div class="form-group col">
+              <label for="first-name">First Name M.I.</label>
+              <input
+                type="text"
+                class="form-control"
+                id="first-name"
+                placeholder="First Name M.I."
+                required
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-sm-8">
+              <label for="time-slot">Consultation Period</label>
+              <select name="time" id="time-slot" class="custom-select" required>
+                <option value="0" selected disabled>Select time slot...</option>
+                <option value="1">8:30 - 9:20 AM</option>
+                <option value="2">9:40 - 10:30 AM</option>
+                <option value="3">10:30 - 11:20 AM</option>
+                <option value="4">11:20 - 12:10 PM</option>
+                <option value="5">12:10 - 1:00 PM</option>
+                <option value="6">1:00 - 1:50 PM</option>
+                <option value="7">2:10 - 3:00 PM</option>
+                <option value="8">3:50 PM onwards</option>
+              </select>
+            </div>
+            <div class="col-sm-4">
+              <label for="section">Section/Block</label>
+              <select
+                name="section"
+                id="section-block"
+                class="custom-select"
+                required
+              >
+                <option value="9" selected disabled>Choose...</option>
+                <optgroup label="Grade 10">
+                  <option value="101">10-Charm</option>
+                  <option value="102">10-Electron</option>
+                  <option value="103">10-Gluon</option>
+                  <option value="104">10-Graviton</option>
+                  <option value="105">10-Muon</option>
+                  <option value="106">10-Photon</option>
+                  <option value="107">10-Tau</option>
+                  <option value="108">10-Truth</option>
+                </optgroup>
+                <optgroup label="SYP 11">
+                  <option value="111">11-A</option>
+                  <option value="112">11-B</option>
+                  <option value="113">11-C</option>
+                  <option value="114">11-D</option>
+                  <option value="115">11-E</option>
+                  <option value="116">11-F</option>
+                  <option value="117">11-G</option>
+                  <option value="118">11-H</option>
+                </optgroup>
+                <optgroup label="SYP 12">
+                  <option value="121">12-A</option>
+                  <option value="122">12-B</option>
+                  <option value="123">12-C</option>
+                  <option value="124">12-D</option>
+                  <option value="125">12-E</option>
+                  <option value="126">12-F</option>
+                  <option value="127">12-G</option>
+                  <option value="128">12-H</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-sm">
+              <label for="student-email">Your School Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="student-email"
+                placeholder="example@email.edu"
+                required
+              />
+            </div>
+            <div class="form-group col-sm">
+              <label for="teacher-email">Teacher's School Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="teacher-email"
+                placeholder="example@email.edu"
+                required
+              />
+            </div>
+          </div>
+
+          <label for="#">Reason for Consultation (check at least one)</label>
+          <div class="reasons">
+            <div class="form-check form-check-inline">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="missed"
+                value="missedReqs"
+              />
+              <label for="missedReqs" class="form-check-label"
+                >Missed Requirements</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="lesson"
+                value="lessonClarify"
+              />
+              <label for="lessonClarify" class="form-check-label"
+                >Lesson Clarification</label
+              >
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="other"
+                value="otherReason"
+              />
+              <label for="otherReason" class="form-check-label"
+                >Other (please specify below)</label
+              >
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea
+              name="moreReason"
+              id="additional"
+              cols="30"
+              rows="8"
+              class="form-control"
+              placeholder="Specifications for other reasons..."
+            ></textarea>
+          </div>
+          <div class="form-group row centered">
+            <label for="consult-date" class="col-s-2 col-form-label"
+              >Consult on:
+            </label>
+            <div class="col-sm-5">
+              <input
+                type="date"
+                name="date"
+                id="consult-on"
+                class="form-control"
+                required
+              />
+            </div>
+          </div>
+          <div class="buttons">
+            <input type="reset" value="RESET" />
+            <input type="submit" value="SUBMIT" />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+
+  <script src="../js/functions.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/e220ab470f.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.4.1.slim.min.js"></script>
+</html>

@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/159.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.back-button button {
+  margin: 20px 30px;
+  padding: 8px 25px;
+  font-size: 20px;
+  font-family: "Questrial", sans-serif;
+  border-radius: 5px;
+  background-color: #1a535c;
+  color: #f7fff7;
+  letter-spacing: 0.1rem;
+  border: 2px solid #1a535c;
+}
+
+.back-button button i {
+  margin-right: 10px;
+  display: none;
+}
+
+.back-button button:hover i {
+  display: inline-block;
+}
+
+.back-button button:hover,
+.buttons input[type="submit"]:hover,
+.buttons input[type="reset"]:hover {
+  background-color: transparent;
+  color: #1a535c;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.5s;
+}
+
+.fill-up-form {
+  margin: 10px 50px 50px;
+  background-color: rgba(174, 232, 228, 0.5);
+  padding: 30px;
+  border: 5px solid #1a535c;
+  border-radius: 15px;
+}
+
+.fill-up-form h1 {
+  text-align: center;
+  font-family: "Arvo", serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+  color: #303030;
+}
+
+.fill-up-form .form-group.row.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.fill-up-form label,
+::-webkit-input-placeholder {
+  font-family: "Questrial", sans-serif;
+  font-size: 1.25rem;
+  color: #303030;
+}
+
+#section-block,
+#time-slot,
+#consult-on {
+  font-family: "Questrial", sans-serif;
+  font-size: 1.2rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons input[type="submit"],
+.buttons input[type="reset"] {
+  background-color: #1a535c;
+  border: 2px solid #1a535c;
+  color: #f7fff7;
+  padding: 10px 20px;
+  font-family: "Questrial", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  margin-top: 10px;
+}
+
+.buttons input[type="reset"] {
+  border-radius: 0px 0px 0px 8px;
+}
+
+.buttons input[type="submit"] {
+  border-radius: 0px 0px 8px 0px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea.form-control:focus,
+#section-block:focus,
+#time-slot:focus,
+#consult-on:focus {
+  background-color: rgba(247, 255, 247, 0.5);
+  border: 2px solid #ff6b6b;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: none;
+  border-bottom: 2px solid #1a535c;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+textarea.form-control,
+#section-block,
+#time-slot,
+#consult-on {
+  border: 2px solid #1a535c;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media only screen and (max-width: 992px) {
+  .fill-up-form label,
+  ::-webkit-input-placeholder {
+    font-size: 1rem;
+  }
+
+  #section-block,
+  #time-slot,
+  #consult-on {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    width: 110%;
+  }
+
+  .fill-up-form h1 {
+    font-size: 2.75rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .fill-up-form {
+    margin: 10px 30px 30px;
+    padding: 30px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .fill-up-form h1 {
+    font-size: 2.5rem;
+  }
+
+  .buttons input[type="submit"],
+  .buttons input[type="reset"] {
+    padding: 8px 15px;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    margin-top: 10px;
+  }
+
+  .back-button button {
+    margin: 20px 30px;
+    padding: 5px 18px;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .fill-up-form {
+    padding: 25px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  body {
+    width: 115%;
+  }
+
+  .fill-up-form h1 {
+    font-size: 2rem;
+  }
+
+  .fill-up-form {
+    padding: 20px;
+  }
+
+  .buttons input[type="submit"],
+  .buttons input[type="reset"] {
+    padding: 6px 12px;
+    letter-spacing: 0.1rem;
+  }
+}

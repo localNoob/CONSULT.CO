@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/shelf.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.navbar {
+  background-color: #1a535c;
+}
+
+.navbar .navbar-brand {
+  font-family: "Arvo", serif;
+  font-weight: 800;
+  color: #ffe874;
+  font-size: 25px;
+  padding-left: 15px;
+}
+
+.navbar .navbar-brand:hover {
+  color: #aee8e4;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.nav-link {
+  color: #f7fff7;
+  font-size: 20px;
+  font-family: "Questrial", sans-serif;
+}
+
+.nav-link.active {
+  color: #ffe874;
+}
+
+.nav-link:hover {
+  color: #ffe874;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.nav-link.active:hover {
+  color: #f7fff7;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+.nav-item.woah {
+  cursor: not-allowed;
+}
+
+.nav-item.woah > a {
+  color: #ff6b6b;
+}
+
+.nav-item.dropdown {
+  padding-right: 20px;
+}
+
+.dropdown-item {
+  font-family: "Questrial", sans-serif;
+  color: #303030;
+}
+
+.dropdown-divider {
+  background-color: #303030;
+}
+
+.dropdown-menu a.dropdown-item:hover {
+  background-color: #fff1af;
+  color: #1a535c;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+}
+
+div.dropdown-menu {
+  background-color: #aee8e4;
+  border: none;
+  width: 50px;
+}
+
+button.navbar-toggler {
+  border: 1px solid #f7fff7;
+  margin-right: 25px;
+}
+
+span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(247,255,247)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+main {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: rgba(100, 100, 100, 0.3);
+}
+
+.first {
+  padding: 10px 100px 10px;
+  margin-bottom: 80px;
+}
+
+.first h1 {
+  text-align: center;
+  font-family: "Arvo", serif;
+  margin: 10px 0px 20px;
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+  color: #fff1af;
+}
+
+.first p {
+  text-indent: 2rem;
+  font-family: "Questrial", sans-serif;
+  font-size: 22px;
+  text-align: justify;
+  margin: 20px 0px;
+  color: #fff1af;
+}
+
+.carousel-item img {
+  height: 475px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 5px ridge #ffe874;
+}
+
+.second {
+  padding: 10px 100px 10px;
+  margin-top: 80px;
+}
+
+.second h1 {
+  text-align: center;
+  font-family: "Arvo", serif;
+  font-size: 3.5rem;
+  letter-spacing: 0.1rem;
+  color: #aee8e4;
+}
+
+.second p {
+  text-indent: 2rem;
+  font-family: "Questrial", sans-serif;
+  font-size: 22px;
+  text-align: justify;
+  margin: 20px 0px;
+  color: #aee8e4;
+}
+
+.part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.part img {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  margin: 30px;
+}
+
+.float img {
+  animation: none;
+}
+
+.float:hover img {
+  cursor: grab;
+  animation-name: float;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a535c;
+}
+
+.one,
+.two,
+.three {
+  width: 250px;
+  text-align: center;
+  align-items: center;
+  font-family: "Questrial", sans-serif;
+  padding: 10px 30px;
+}
+
+.one {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #f7fff7;
+}
+
+.one small b {
+  font-family: "Arvo", serif;
+  color: #ffe874;
+}
+
+.two span {
+  font-size: 2rem;
+  letter-spacing: 1rem;
+}
+
+.fa-twitter,
+.fa-facebook,
+.fa-youtube {
+  color: #f7fff7;
+}
+
+.fa-twitter:hover {
+  color: #00acee;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  font-size: 2.75rem;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  font-size: 2.75rem;
+}
+
+.fa-youtube:hover {
+  color: red;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-in-out;
+  font-size: 2.75rem;
+}
+
+.three {
+  line-height: 1.5rem;
+  color: #f7fff7;
+}
+
+.three p {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.three h5 {
+  font-size: 1.5rem;
+  color: #ff6b6b;
+  margin: 0;
+  font-family: "Arvo", serif;
+}
+
+.three a {
+  color: #f7fff7;
+}
+
+.three a:hover {
+  color: #ffe874;
+  text-decoration: none;
+  transition-timing-function: ease-out;
+  transition-duration: 0.5s;
+  font-size: 1.5rem;
+}
+
+@keyframes float {
+  from {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-link:hover,
+  .nav-link.active:hover {
+    background-color: #fff1af;
+    color: #303030;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+  }
+
+  .nav-link.disabled:hover {
+    background-color: transparent;
+    color: #ff6b6b;
+  }
+
+  div.dropdown-menu {
+    background-color: transparent;
+    border: none;
+    width: 100px;
+  }
+
+  a.dropdown-item {
+    font-size: 18px;
+    color: #ffe874;
+  }
+
+  .first,
+  .second {
+    padding: 10px 50px 10px;
+  }
+
+  .first {
+    margin-bottom: 40px;
+  }
+
+  .second {
+    margin-top: 40px;
+  }
+
+  .carousel-item img {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  body {
+    width: 110%;
+  }
+
+  .first,
+  .second {
+    padding: 10px 25px 10px;
+  }
+
+  .first h1,
+  .second h1 {
+    font-size: 2.75rem;
+  }
+
+  .first p,
+  .second p {
+    font-size: 1.2rem;
+  }
+
+  .part {
+    flex-direction: column;
+  }
+
+  .part img {
+    margin: 20px;
+    height: 150px;
+    width: 150px;
+  }
+
+  .carousel-item img {
+    height: 300px;
+  }
+
+  .one,
+  .two,
+  .three {
+    width: 150px;
+  }
+
+  .one {
+    font-size: 1.1rem;
+    line-height: 1rem;
+  }
+
+  .three h5,
+  .three p {
+    font-size: 1rem;
+  }
+
+  .three a:hover {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  body {
+    width: 150%;
+  }
+}
